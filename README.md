@@ -12,7 +12,7 @@ Users can search, filter, sort, and mark favorites.
 - **Favorites:** Mark/unmark books, saved in `localStorage`, toggle to view favorites only.
 - **Accessibility:** Keyboard-friendly and helpful empty states.
 
-<img width="970" height="565" alt="image" src="https://github.com/user-attachments/assets/cb181c3b-0a7c-424f-bc6c-e7c4cf039adb" />
+<img width="485" height="283" alt="image" src="https://github.com/user-attachments/assets/cb181c3b-0a7c-424f-bc6c-e7c4cf039adb" />
 
 ---
 
