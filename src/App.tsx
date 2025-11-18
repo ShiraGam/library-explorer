@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import Fuse from 'fuse.js';
 import { Book, Tag } from './types';
 import {Books} from "./components/Books";
 import {Filters} from "./components/Filters";
@@ -52,11 +53,13 @@ function App() {
         let tempBooks = [...books];
 
         if (searchQuery) {
-            const lower = searchQuery.toLowerCase();
-            tempBooks = tempBooks.filter((b) =>
-                b.title.toLowerCase().includes(lower) ||
-                b.author.toLowerCase().includes(lower)
-             ); 
+            const fuse = new Fuse<Book>(tempBooks, {
+            keys: ['title', 'author'],  
+            threshold: 0.3,             
+            });
+
+           const result = fuse.search(searchQuery);
+           tempBooks = result.map(r => r.item); 
         }
 
         if (selectedTag) tempBooks = tempBooks.filter((b) => b.tags.includes(selectedTag as Tag));
