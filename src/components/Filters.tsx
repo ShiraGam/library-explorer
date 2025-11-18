@@ -68,10 +68,11 @@ export const Filters: React.FC<FiltersProps> = ({
                     step={0.5}
                     value={minRating}
                     onChange={(e) => {
-                        const value = Number(e.target.value);
-                        if (value >= MIN_RATING && value <= MAX_RATING) {
-                            setMinRating(value);
-                        }
+                        let value = Number(e.target.value);
+                        // Clamp the value between MIN_RATING and MAX_RATING
+                        if (value < MIN_RATING) value = MIN_RATING;
+                        if (value > MAX_RATING) value = MAX_RATING;
+                        setMinRating(value);
                     }}
                 />
             </div>
