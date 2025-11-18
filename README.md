@@ -7,7 +7,7 @@ Users can search, filter, sort, and mark favorites.
 ## Features
 - **Load data:** From `public/books.json`.
 - **Search:** Search: By title or author (case-insensitive), including smart fuzzy matching that finds relevant results even with partial or slightly incorrect input.
-- **Filter:** By tag or minimum rating ((0–5). Values outside this range are not accepted.)
+- **Filter:** By tag or minimum rating ((0–5).Values below 0 or above 5 are automatically adjusted).
 - Available tags are: tech, non-fiction, fiction, fantasy, history, self-help, science and all tags.
 - **Reset Filters:** Restores all filters to their default state: clears tag and rating filters, resets sorting to title A-Z, and turns off the favorites-only view, without clearing the search input.
 - **Sort:** Choose one field at a time:
