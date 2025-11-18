@@ -33,16 +33,16 @@ Users can search, filter, sort, and mark favorites.
 
 ## Tech
 
--React (with Hooks: useState, useEffect) and Fuse.js for fuzzy search.  
--TypeScript (Strict)  
--Create React App (CRA)  
--localStorage for storing favorites
+React (with Hooks: useState, useEffect) and Fuse.js for fuzzy search.  
+TypeScript (Strict)  
+Create React App (CRA)  
+localStorage for storing favorites
 
 
 ---
 
 ## Setup
--Note: Make sure you have Node.js installed before proceeding.
+Note: Make sure you have Node.js installed before proceeding.
 
 ```bash
 git clone https://github.com/ShiraGam/library-explorer
