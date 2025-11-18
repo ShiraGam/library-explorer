@@ -10,9 +10,9 @@ Users can search, filter, sort, and mark favorites.
 - **Filter:** By tag or minimum rating(0 - 5).
 - Available tags are: tech, non-fiction, fiction, fantasy, history, self-help, science and all tags.
 - **Reset Filters:** Restores all filters to their default state: clears tag and rating filters, resets sorting to title A-Z, and turns off the favorites-only view, without clearing the search input.
--**Sort:** Choose one field at a time:
-  Title: Ascending (A-Z) / Descending (Z-A) .
-  Rating: Ascending / Descending.
+- **Sort:** Choose one field at a time:
+- Title: Ascending (A-Z) / Descending (Z-A) .
+- Rating: Ascending / Descending.
 - **Favorites:** Mark/unmark books, saved in `localStorage`, toggle to view favorites only.
 - **Accessibility:** Keyboard-friendly and helpful empty states.
 
