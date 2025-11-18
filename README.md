@@ -8,6 +8,7 @@ Users can search, filter, sort, and mark favorites.
 - **Load data:** From `public/books.json`.
 - **Search:** Search: By title or author (case-insensitive), including smart fuzzy matching that finds relevant results even with partial or slightly incorrect input.
 - **Filter:** By tag or minimum rating.
+- **Reset Filters:** Restores all filters to their default state: clears tag and rating filters, resets sorting to title A-Z, and turns off the favorites-only view, without clearing the search input.
 - **Sort:** By title (A-Z / Z-A) or rating (high-low / low-high).
 - **Favorites:** Mark/unmark books, saved in `localStorage`, toggle to view favorites only.
 - **Accessibility:** Keyboard-friendly and helpful empty states.
