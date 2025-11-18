@@ -53,13 +53,13 @@ function App() {
         let tempBooks = [...books];
 
         if (searchQuery) {
+            const query = searchQuery.trim();
             const fuse = new Fuse<Book>(tempBooks, {
-            keys: ['title', 'author'],  
-            threshold: 0.3,             
-            });
-
-           const result = fuse.search(searchQuery);
-           tempBooks = result.map(r => r.item); 
+                keys: ['title', 'author'],
+                threshold: 0.3,
+             });
+            const result = fuse.search(query);
+            tempBooks = result.map(r => r.item); 
         }
 
         if (selectedTag) tempBooks = tempBooks.filter((b) => b.tags.includes(selectedTag as Tag));
