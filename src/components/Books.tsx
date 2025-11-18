@@ -22,7 +22,7 @@ export const Books: React.FC<BooksProps> = ({ books, favorites, toggleFavorite }
                         {favorites.some((b) => b.id === book.id) ? '⭐' : '☆'}
                     </span>
                     <div>
-                        <strong>{book.title}</strong> by {book.author} ({book.year}) — Rating: {book.rating}
+                        <strong>{book.title}</strong> by {book.author} ({book.year}) - Rating: {book.rating}
                         <br />
                         <small>Tags: {book.tags.join(', ')}</small>
                     </div>
