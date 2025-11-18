@@ -52,10 +52,10 @@ function App() {
         let tempBooks = [...books];
 
         if (searchQuery) {
-            tempBooks = tempBooks.filter(
-                (b) =>
-                    b.title.toLowerCase() === searchQuery.toLowerCase() ||
-                    b.author.toLowerCase() === searchQuery.toLowerCase()
+            const lower = searchQuery.toLowerCase();
+            tempBooks = tempBooks.filter((b) =>
+                b.title.toLowerCase().includes(lower) ||
+                b.author.toLowerCase().includes(lower)
             );
         }
 
