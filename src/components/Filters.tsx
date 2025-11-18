@@ -1,4 +1,6 @@
 import {Tag} from "../types";
+const MIN_RATING = 0;
+const MAX_RATING = 5;
 
 interface FiltersProps {
     searchQuery: string;
@@ -33,8 +35,7 @@ export const Filters: React.FC<FiltersProps> = ({
                                              allTags,
                                              resetFilters,
                                          }) => {
-const MIN_RATING = 0;
-const MAX_RATING = 5;
+
 
     return (
         <div className="filters">
