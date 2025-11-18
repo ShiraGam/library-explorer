@@ -90,7 +90,6 @@ function App() {
     const allTags: Tag[] = Array.from(new Set(books.flatMap((b) => b.tags))) as Tag[];
 
     const resetFilters = () => {
-        setSearchQuery('');
         setSelectedTag('');
         setMinRating(0);
         setSortField('title');
