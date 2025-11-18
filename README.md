@@ -42,6 +42,7 @@ Users can search, filter, sort, and mark favorites.
 ---
 
 ## Setup
+-Note: Make sure you have Node.js installed before proceeding.
 
 ```bash
 git clone https://github.com/ShiraGam/library-explorer
