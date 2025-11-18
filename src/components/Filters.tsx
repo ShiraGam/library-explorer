@@ -33,6 +33,9 @@ export const Filters: React.FC<FiltersProps> = ({
                                              allTags,
                                              resetFilters,
                                          }) => {
+const MIN_RATING = 0;
+const MAX_RATING = 5;
+
     return (
         <div className="filters">
             <div className="filter-row">
@@ -63,7 +66,12 @@ export const Filters: React.FC<FiltersProps> = ({
                     max={5}
                     step={0.5}
                     value={minRating}
-                    onChange={(e) => setMinRating(Number(e.target.value))}
+                    onChange={(e) => {
+                        const value = Number(e.target.value);
+                        if (value >= MIN_RATING && value <= MAX_RATING) {
+                            setMinRating(value);
+                        }
+                    }}
                 />
             </div>
 
