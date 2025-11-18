@@ -14,7 +14,6 @@ Users can search, filter, sort, and mark favorites.
 - Title: Ascending (A-Z) / Descending (Z-A) .
 - Rating: Ascending / Descending.
 - **Favorites:** Mark/unmark books, saved in `localStorage`, toggle to view favorites only.
-- **Accessibility:** Keyboard-friendly and helpful empty states.
 
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/cb181c3b-0a7c-424f-bc6c-e7c4cf039adb" />
 
