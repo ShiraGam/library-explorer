@@ -56,7 +56,7 @@ function App() {
             const query = searchQuery.trim();
             const fuse = new Fuse<Book>(tempBooks, {
                 keys: ['title', 'author'],
-                threshold: 0.5,
+                threshold: 0.4,
              });
             const result = fuse.search(query);
             tempBooks = result.map(r => r.item); 
