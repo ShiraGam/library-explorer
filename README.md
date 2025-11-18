@@ -29,9 +29,11 @@ Users can search, filter, sort, and mark favorites.
 
 ## Tech
 
-- React
-- TypeScript (Strict)
-- Create React App (CRA)
+-React (with Hooks: useState, useEffect) and Fuse.js for fuzzy search  
+-TypeScript (Strict)  
+-Create React App (CRA)  
+-localStorage for storing favorites
+
 
 ---
 
