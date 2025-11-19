@@ -48,3 +48,10 @@ git clone https://github.com/ShiraGam/library-explorer
 cd library-explorer
 npm install
 npm start
+
+
+---
+### **Demo Video**
+A silent demo video is included in this project showing how to install and run Library Explorer. 
+[Click here to watch the demo video](https://drive.google.com/file/d/1Jhuza624yiR2ju-3HNBSNnyk2UqYlj-o/view?usp=sharing)
+
